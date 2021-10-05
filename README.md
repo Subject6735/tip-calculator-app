@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
--   [GitHub Repository](https://your-solution-url.com)
--   [Live Site](https://your-live-site-url.com)
+-   [GitHub Repository](https://github.com/Subject6735/tip-calculator-app)
+-   [Live Site](https://subject6735.github.io/tip-calculator-app/)
 
 ## My process
 
