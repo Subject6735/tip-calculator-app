@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
--   [GitHub Repository](https://github.com/Subject6735/tip-calculator-app)
+-   [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/tip-calculator-app-with-tailwind-and-sass-JSHPrxSE7)
 -   [Live Site](https://subject6735.github.io/tip-calculator-app/)
 
 ## My process
