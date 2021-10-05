@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 8fr 2fr;
+  gap: 2rem;
+  background-color: #c5e4e7;
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+}
+body > * {
+  justify-self: center;
+}
+
+main {
+  border-radius: 25px;
+  background-color: #f4fafa;
+  width: auto;
+  height: 75%;
+  /* Input */
+  /* Output */
+}
+main > div:first-child {
+  width: 100%;
+}
+main > div:first-child input {
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #c5e4e7;
+  border-radius: 5px;
+  width: 100%;
+}
+main > div:first-child input:hover {
+  cursor: pointer;
+}
+main > div:first-child input:focus {
+  color: #00494d;
+  background-color: white;
+}
+main > div:first-child .text {
+  font-weight: 700;
+  color: #00494d;
+}
+main > div:first-child #pplerror {
+  color: orangered;
+  font-weight: 700;
+}
+main > div:nth-child(2) {
+  width: 100%;
+  border-radius: 25px;
+  background-color: #00494d;
+}
+main > div:nth-child(2) .text {
+  font-weight: 700;
+}
+main > div:nth-child(2) .text div:first-child {
+  color: white;
+}
+main > div:nth-child(2) .text div:nth-child(2) {
+  color: #7f9c9f;
+}
+main > div:nth-child(2) button {
+  color: #00494d;
+  background-color: #26c0ab;
+  font-weight: 700;
+  font-size: 24px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+main > div:nth-child(2) button:hover {
+  color: #00494d;
+  background-color: #9fe8df;
+}
+main > div:nth-child(2) button.disabled:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+main input:focus {
+  outline-color: #26c0ab;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+#bill {
+  background-image: url("../../images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position-x: 5%;
+  background-position-y: center;
+}
+
+#number-of-ppl {
+  background-image: url("../../images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position-x: 5%;
+  background-position-y: center;
+}
+
+#tipselect button {
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #00494d;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+}
+#tipselect button:hover {
+  color: #00494d;
+  background-color: #9fe8df;
+}
+#tipselect .btn-clicked {
+  color: #00494d;
+  background-color: #26c0ab;
+}
+#tipselect input {
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #c5e4e7;
+  color: #00494d;
+  border-radius: 5px;
+  width: 100%;
+}
+#tipselect input:hover {
+  color: #00494d;
+  background-color: #9fe8df;
+  cursor: pointer;
+}
+#tipselect input:focus {
+  color: #00494d;
+  background-color: white;
+}
+
+#tipamount-out,
+#total-out {
+  font-size: 24px;
+  font-weight: 700;
+  color: #26c0ab;
+}
+
+/*# sourceMappingURL=main.css.map */

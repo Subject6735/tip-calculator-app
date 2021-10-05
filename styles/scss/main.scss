@@ -1,0 +1,178 @@
+@use 'var';
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+body {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 8fr 2fr;
+    gap: 2rem;
+
+    > * {
+        justify-self: center;
+    }
+
+    background-color: var.$lightGrayishCyan1;
+
+    font-family: var.$fontFamily;
+    font-size: var.$defFontSize;
+}
+
+main {
+    border-radius: 25px;
+    background-color: var.$lightGrayishCyan2;
+
+    width: auto;
+    height: 75%;
+
+    /* Input */
+    > div:first-child {
+        width: 100%;
+
+        input {
+            font-size: var.$formFontSize;
+            font-weight: var.$fw700;
+            background-color: var.$lightGrayishCyan1;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        input:hover {
+            cursor: pointer;
+        }
+
+        input:focus {
+            color: var.$veryDarkCyan;
+            background-color: var.$white;
+        }
+
+        .text {
+            font-weight: var.$fw700;
+            color: var.$veryDarkCyan;
+        }
+
+        #pplerror {
+            color: orangered;
+            font-weight: var.$fw700;
+        }
+    }
+
+    /* Output */
+    > div:nth-child(2) {
+        width: 100%;
+        border-radius: 25px;
+
+        background-color: var.$veryDarkCyan;
+
+        .text {
+            div:first-child {
+                color: var.$white;
+            }
+
+            div:nth-child(2) {
+                color: var.$darkGrayishCyan2;
+            }
+
+            font-weight: var.$fw700;
+        }
+
+        button {
+            color: var.$veryDarkCyan;
+            background-color: var.$strongCyan;
+            font-weight: var.$fw700;
+            font-size: var.$formFontSize;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            color: var.$veryDarkCyan;
+            background-color: var.$lightCyan3;
+        }
+
+        button.disabled:hover {
+            background-color: var.$strongCyan;
+            color: var.$veryDarkCyan;
+        }
+    }
+
+    input:focus {
+        outline-color: var.$strongCyan;
+    }
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+#bill {
+    background-image: url('../../images/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+    background-position-y: center;
+}
+
+#number-of-ppl {
+    background-image: url('../../images/icon-person.svg');
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+    background-position-y: center;
+}
+
+#tipselect {
+    button {
+        font-size: var.$formFontSize;
+        font-weight: var.$fw700;
+        background-color: var.$veryDarkCyan;
+        color: var.$white;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    button:hover {
+        color: var.$veryDarkCyan;
+        background-color: var.$lightCyan3;
+    }
+
+    .btn-clicked {
+        color: var.$veryDarkCyan;
+        background-color: var.$strongCyan;
+    }
+
+    input {
+        font-size: var.$formFontSize;
+        font-weight: var.$fw700;
+        background-color: var.$lightGrayishCyan1;
+        color: var.$veryDarkCyan;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    input:hover {
+        color: var.$veryDarkCyan;
+        background-color: var.$lightCyan3;
+        cursor: pointer;
+    }
+
+    input:focus {
+        color: var.$veryDarkCyan;
+        background-color: var.$white;
+    }
+}
+
+#tipamount-out,
+#total-out {
+    font-size: var.$formFontSize;
+    font-weight: var.$fw700;
+    color: var.$strongCyan;
+}
